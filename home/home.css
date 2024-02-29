@@ -1,0 +1,229 @@
+* {
+   font-family: 'Poppins', sans-serif; 
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.navbar {
+    justify-content: center;
+    background-color: transparent !important;
+}
+
+.logo-img {
+    width: 100px; 
+    height: auto;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+.navbar-nav {
+    text-align: center;
+    width: 100%;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+}
+
+.navbar-scrolled {
+    background-color: #0807205d !important;
+}
+
+.login-btn {
+    border: none;
+    border-radius: 20px;
+    background-color: #5F5BFF; 
+    color: white;
+    font-weight: bold;
+}
+
+.header {
+    position: relative;
+    height: 100vh; /* Sesuaikan dengan kebutuhan */
+    background-image: url('bg.png'); /* Ganti dengan path foto yang sesuai */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: left;
+}
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(3, 0, 18, 0.911), rgba(0, 0, 0, 0), rgba(3, 0, 18, 0.911));
+}
+
+.header-text {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+.header-text p {
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.register-btn {
+    border: none;
+    border-radius: 20px;
+    background-color: white; 
+    color: black;
+}
+
+.iot {
+    background: linear-gradient(to bottom, #080720, #151257f1, #151292b7, white); /* Adjust the colors as needed */
+    padding: 50px 0;
+    justify-content: flex-start;
+}
+
+.company {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.47), #141292bf, #080720); /* Adjust the colors as needed */
+    padding: 50px 0;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iot-img {
+    width: 100%;
+    max-width: 250px; /* Adjust the size as needed */
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+.right-img {
+    margin-left: 50%;
+    margin-top: -15%;
+}
+
+.left-img {
+    margin-right: 10%;
+    margin-top: -15%;
+}
+
+.top-img {
+    margin-right: 10%;
+}
+
+
+.company-img {
+    width: 100%;
+    max-width: 450; /* Adjust the size as needed */
+    margin-bottom: 20px;
+}
+
+.service {
+    background: linear-gradient(to bottom, #080720, #17155b, #151292b7, rgba(23, 21, 163, 0.616), rgba(23, 21, 163, 0.566), white); /* Adjust the colors as needed */
+    padding: 50px 0;
+}
+
+.image-container-custom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image-box {
+    text-align: center;
+}
+
+.service-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.caption {
+    margin-top: 10px;
+}
+
+.text-container {
+    flex: 1;
+    padding: 30 50px;
+    max-width: 48%;
+}
+
+.text {
+    font-size: 18px;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image-container {
+        order: 2;
+    }
+
+    .text-container {
+        order: 1;
+    }
+}
+
+.text-container h1, h2{
+    font-weight: bold;
+    text-shadow:2px 1px 4px #080720;
+}
+
+.text-container p {
+    font-size: 16px;
+    text-align: justify;
+    min-width: 300px;
+}
+
+footer {
+    background-color: #0C0C24;
+    color: white;
+}
+
+.container-footer {
+    text-align: center;
+}
+
+.list-inline .list-inline-item {
+    text-decoration: none;
+    color: white !important;
+    font-weight: bold;
+}
+
+.social-media-icons i {
+    color: white;
+}
+
+.list-inline .list-inline-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-media-icons {
+    margin-top: 10px;
+}
+
+.container-footer p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
