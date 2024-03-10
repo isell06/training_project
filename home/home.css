@@ -39,6 +39,7 @@
     background-color: #5F5BFF; 
     color: white;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .header {
@@ -167,6 +168,29 @@
 .text {
     font-size: 18px;
 }
+
+.btn {
+    border: none;
+    border-radius: 20px;
+    background-color: white; 
+    color: black;
+}
+
+.btn:hover{
+      background-color: #06102C;
+      transform: translateY(-1px);
+      color: white;
+    }
+
+.btn ion-icon {
+    position: absolute;
+    top: 8px;
+    left: 2px;
+    right: 4px;
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
 
 /* Media Query for Mobile Responsiveness */
 @media (max-width: 768px) {

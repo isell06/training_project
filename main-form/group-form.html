@@ -163,52 +163,39 @@
 <section>
     <div class="container">
       <div class="container-bottom">
-        <form class="form" action="#">
+        <form class="form" action="c:\training_project\home\home.html">
             <div class="cardHeader">
-                <h2>Main Register Training</h2>
+                <h2>Register Training Group</h2>
             </div>
           <div class="main-container-form">
-            <div class="container-form-left">
-              <div class="input-group">
-                  <label for="email" class="label">Email</label>
-                  <input type="email" name="email" id="email" placeholder="Enter email">
-              </div>
-              <div class="input-group">
-                  <label for="phone" class="label">Phone</label>
-                  <input type="number" name="phone" id="phone" placeholder="Enter phone number">
-              </div>
-              <div class="input-group">
-                <label for="address" class="label">Address</label>
-                <textarea name="address" id="addres" cols="30" rows="8" placeholder="Enter address"></textarea>
-              </div>
-            </div>
-            
             <div class="container-form-right">
               <div class="input-group">
-                  <label for="name" class="label">Name</label>
-                  <input type="text" name="name" id="name" placeholder="Enter name">
+                  <label for="company-name" class="label">Company Name</label>
+                  <input type="text" name="company-name" id="company-name" placeholder="Enter company name">
               </div>
               <div class="input-group">
-                <label for="course" class="label">Course</label>
-                <select name="course" id="course">
-                  <option value="" selected disabled>Choose course training</option>
-                </select>
+                  <label for="participant" class="label">Participant 1</label>
+                  <input type="text" name="participant" id="participant" placeholder="Enter participant name">
               </div>
               <div class="input-group">
-                <label for="location" class="label">Location</label>
-                <select name="location" id="location">
-                  <option value="" selected disabled>Choose location training</option>
-                  <option value="">Inhouse</option>
-                  <option value="">Outhouse</option>
-                </select>
+                  <label for="participant" class="label">Participant 2</label>
+                  <input type="text" name="participant" id="participant" placeholder="Enter participant name">
               </div>
-              
-                <button class="submit-button" type="submit" :disabled="failedInsert">Submit as Individual</button>
-                <a href="group-form.html" class="btn">
-                    <ion-icon name="add-outline"></ion-icon>Submit as Group</a>            
+              <div class="input-group">
+                  <label for="participant" class="label">Participant 3</label>
+                  <input type="text" name="participant" id="participant" placeholder="Enter participant name">
+              </div>
+              <div class="input-group">
+                  <label for="participant" class="label">Participant 4</label>
+                  <input type="text" name="participant" id="participant" placeholder="Enter participant name">
+              </div>
+              <div class="input-group">
+                  <label for="participant" class="label">Participant 5</label>
+                  <input type="text" name="participant" id="participant" placeholder="Enter participant name">
+              </div>
             </div>
           </div>
-          
+                <button class="submit-button" type="submit" :disabled="failedInsert">Submit</button>
         </form>
       </div>
     </div>

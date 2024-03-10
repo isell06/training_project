@@ -54,3 +54,47 @@ body {
     margin: 180px;
 }
 
+.btn {
+    position: relative;
+    padding: 10px;
+    background: #002D80;
+    text-decoration: none;
+    color: white;
+    border-radius: 6px;
+    padding-left: 20px;
+    margin-top:16px ;
+}
+
+.btn:hover{
+      background-color: #06102C;
+      transform: translateY(-1px);
+      color: white;
+    }
+
+.btn ion-icon {
+    position: absolute;
+    top: 8px;
+    left: 2px;
+    right: 4px;
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .main-container-form {
+    flex-direction: column; /* Change to column for smaller screens */
+  }
+
+  .container-form-left,
+  .container-form-right {
+    width: 100%; /* Make the form sections full width */
+  }
+}
+
+.cardHeader h2 {
+    padding-left: 16px;
+    font-weight: 600;
+    color: #002D80;
+}
