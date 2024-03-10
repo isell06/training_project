@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="course.css">
+    <title>Create-Course</title>
+    <style>
+    /* Main Content */
+    .main-container-form{
+      display: flex;
+      gap: 20px;
+    }
+    /* Top */
+    .container-top{
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      padding-inline: 1rem;
+    }
+
+    /* Right */
+    .container-form-right{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-grow: 1;
+    }
+
+    .container-form-left{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-grow: 1;
+    }
+
+    .form{
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .input-group{
+      display: flex;
+      position: relative;
+      padding: 16px;
+    }
+
+    .label{
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 13px;
+      transform: translate(15px, -50%);
+      z-index: 0;
+      background-color: #f3f7fa;
+      transition: 1s ease;
+      color: rgba(0, 0, 0, 0.8);
+      padding-inline: 2px;
+    }
+    input[type="text"], input[type="number"], textarea, select{
+      padding: 10px;
+      padding-inline: 15px;
+      font-size: 15px;
+      width: 100%;
+      outline: none;
+      border-radius: 8px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      font-family: Roboto;
+    }
+    .submit-button{
+      padding: 10px;
+      font-family: Roboto;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: transparent;
+      background-color: #002D80;
+      color: #fff;
+    }
+    .submit-button:hover{
+      background-color: #06102C;
+      transform: translateY(-1px);
+    }
+
+    .d-flex{
+      display: flex;
+    }
+
+    @media screen and (max-width: 600px) {
+    .main-container-form {
+      flex-direction: column; /* Change to column for smaller screens */
+    }
+
+    .container-form-left,
+    .container-form-right {
+      width: 100%; /* Make the form sections full width */
+    }
+  }
+  </style>
+  </head>
+<body>
+    <!--Navigation-->
+    <div class="container">
+        <div class="navigation text-white align-self-center">
+            <ul>
+                <li>
+                    <a href="admin.html">
+                        <span class="image">
+                            <img src="img/cv.png" alt="Company Logo" width="60px">
+                        </span>
+                        <span class="title text-white">CV. Smartplus Indonesia</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="admin.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="customer.html">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Customers</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="trainer.html">
+                        <span class="icon">
+                            <ion-icon name="code-outline"></ion-icon>
+                        </span>
+                        <span class="title">Trainer</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="course.html">
+                        <span class="icon">
+                            <ion-icon name="construct-outline"></ion-icon>
+                        </span>
+                        <span class="title">Course</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="training.html">
+                        <span class="icon">
+                            <ion-icon name="storefront-outline"></ion-icon>
+                        </span>
+                        <span class="title">Training</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="schedule.html">
+                        <span class="icon">
+                            <ion-icon name="time-outline"></ion-icon>
+                        </span>
+                        <span class="title">Schedule</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="set.html">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="logout">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Main-->
+    <div class="main">
+        <div class="topbar">
+            <div class="toggle">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+
+            <div class="search text-white">
+                <label>
+                <input type="text" placeholder="Search here">
+                    <ion-icon name="search-outline"></ion-icon>
+                </label>
+            </div>
+
+            <div class="user">
+                <img src="img/j.jpg" alt="profile">
+            </div>
+        </div>
+
+        <!--Form Course-->
+        <div class="course">
+            <div class="courses">
+                <div class="cardHeader">
+                    <h2>Create Course Training</h2>
+                </div>
+
+                <form class="form" action="#">
+                <div class="main-container-form">
+                    <div class="container-form-right">
+                    <div class="input-group">
+                        <label for="namec-text" class="label">Name Course</label>
+                        <input type="text" name="namec-text" id="namec-text" placeholder="Enter name course">
+                    </div>
+                    <div class="input-group">
+                        <label for="desc-text" class="label">Description</label>
+                        <textarea name="desc-text" id="desc-text" cols="20" rows="8" placeholder="Enter description"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label for="price-number" class="label">Price</label>
+                        <input type="number" name="price-number" id="price-number" placeholder="Enter price">
+                    </div>
+                    </div>
+                </div>
+                <button class="submit-button" type="submit" :disabled="failedInsert">Submit Course</button>
+                </form>
+            </div>
+        <!--End Detail Course-->
+
+    </div>
+    <!--End Main-->
+
+
+    <!--ionicons-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--Main JS-->
+    <script src="js/main.js"></script>
+
+    <!--Chart JS-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="js/chart.js"></script>   
+
+</body>
+</html>

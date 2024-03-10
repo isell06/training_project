@@ -310,6 +310,11 @@ body {
     text-align:  start;
 }
 
+.details .detailSchedule table tr td:nth-child(4) {
+    text-align: center;
+}
+
+
 .details .detailSchedule table tr td:nth-child(3) {
     text-align: start;
 }

@@ -230,7 +230,7 @@ body {
     object-fit: cover;
 }
 
-.cust  {
+.course  {
     position: relative;
     width: 100%;
     padding: 20px;
@@ -239,7 +239,7 @@ body {
     grid-gap: 30px;
 }
 
-.cust .custo {
+.course .courses {
     position: relative;
     display: grid;
     min-height: 200px;
@@ -249,7 +249,7 @@ body {
     border-radius: 20px;
 }
 
-.cust .cardHeader {
+.course .cardHeader {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -279,44 +279,42 @@ body {
     color: var(--white);
 }
 
-.cust table {
+.course table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
 }
 
-.cust table thead td {
+.course table thead td {
     font-weight: 600;
 }
 
-.cust .custo table tr {
+.course .courses table tr {
     color: var(--navy2);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.cust .custo table tr:last-child {
+.course .courses table tr:last-child {
     border-bottom: none;
 }
 
-.cust .custo table tr td {
+.course .courses table tr td {
     padding: 10px;
 }
 
-.cust .custo table tr td:last-child {
+.course .courses table tr td:last-child {
     text-align: start;
 }
 
-.cust .custo table tr td:nth-child(5) {
-    text-align: center;
+.course .courses table tr td:nth-child(2) {
+    text-align:  start;
 }
 
-.cust .custo table tr td:nth-child(1) {
-    text-align: center;
+
+.course .courses table tr td:nth-child(3) {
+    text-align: start;
 }
 
-.cust .custo table tr td:nth-child(3) {
-    text-align: center;
-}
 
 .status.completed {
     padding: 2px 4px;
@@ -367,7 +365,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .cust {
+  .course {
     grid-template-columns: 1fr;
   }
   .recentOrders {

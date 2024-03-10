@@ -5,7 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
     <link rel="stylesheet" href="schedule.css">
-    <title>Dashboard Admin</title>
+    <title>Create-Schedule</title>
+    <style>
+    /* Main Content */
+    .main-container-form{
+      display: flex;
+      gap: 20px;
+    }
+    /* Top */
+    .container-top{
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      padding-inline: 1rem;
+    }
+
+    /* Right */
+    .container-form-right{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-grow: 1;
+    }
+
+    .container-form-left{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-grow: 1;
+    }
+
+    .form{
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .input-group{
+      display: flex;
+      position: relative;
+      padding: 16px;
+    }
+
+    .label{
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 13px;
+      transform: translate(15px, -50%);
+      z-index: 0;
+      background-color: #f3f7fa;
+      transition: 1s ease;
+      color: rgba(0, 0, 0, 0.8);
+      padding-inline: 2px;
+    }
+    input[type="text"], input[type="date"], input[type="time"], select{
+      padding: 10px;
+      padding-inline: 15px;
+      font-size: 15px;
+      width: 100%;
+      outline: none;
+      border-radius: 8px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      font-family: Roboto;
+    }
+    .submit-button{
+      padding: 10px;
+      font-family: Roboto;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: transparent;
+      background-color: #002D80;
+      color: #fff;
+    }
+    .submit-button:hover{
+      background-color: #06102C;
+      transform: translateY(-1px);
+    }
+
+    .d-flex{
+      display: flex;
+    }
+
+    @media screen and (max-width: 600px) {
+    .main-container-form {
+      flex-direction: column; /* Change to column for smaller screens */
+    }
+
+    .container-form-left,
+    .container-form-right {
+      width: 100%; /* Make the form sections full width */
+    }
+  }
+  </style>
 </head>
 <body>
     <!--Navigation-->
@@ -115,110 +209,51 @@
             </div>
         </div>
 
-        <!--Schedule-->
+        <!--Form Schedule-->
         <div class="details">
             <div class="detailSchedule">
                 <div class="cardHeader">
-                    <h2>Schedule</h2>
-                    <a href="schedule-form.html" class="btn">
-                        <ion-icon name="add-outline"></ion-icon>
-                    Add Schedule</a>
+                    <h2>Create Schedule Training</h2>
                 </div>
 
-                <table>
-                    <thead>
-                        <tr>
-                            <td>No.</td>
-                            <td>Customer</td>
-                            <td>Location</td>
-                            <td>Date</td>
-                            <td>Time</td>
-                            <td>Action</td>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td>1.</td>
-                            <td>Park Jay</td>
-                            <td>CV. Smartplus</td>
-                            <td>08-08-2024</td>
-                            <td>09.00</td>
-                            <td>
-                                <a href="#" class="status inProgress">Edit</a>
-                                <a href="#" class="status completed">Show</a>
-                                <a href="#" class="status pending">Delete</a>                                
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>1.</td>
-                            <td>Park Jay</td>
-                            <td>CV. Smartplus</td>
-                            <td>08-08-2024</td>
-                            <td>09.00</td>
-                            <td>
-                                <a href="#" class="status inProgress">Edit</a>
-                                <a href="#" class="status completed">Show</a>
-                                <a href="#" class="status pending">Delete</a>                                
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>1.</td>
-                            <td>Park Jay</td>
-                            <td>CV. Smartplus</td>
-                            <td>08-08-2024</td>
-                            <td>09.00</td>
-                            <td>
-                                <a href="#" class="status inProgress">Edit</a>
-                                <a href="#" class="status completed">Show</a>
-                                <a href="#" class="status pending">Delete</a>                                
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>1.</td>
-                            <td>Park Jay</td>
-                            <td>CV. Smartplus</td>
-                            <td>08-08-2024</td>
-                            <td>09.00</td>
-                            <td>
-                                <a href="#" class="status inProgress">Edit</a>
-                                <a href="#" class="status completed">Show</a>
-                                <a href="#" class="status pending">Delete</a>                                
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>1.</td>
-                            <td>Park Jay</td>
-                            <td>CV. Smartplus</td>
-                            <td>08-08-2024</td>
-                            <td>09.00</td>
-                            <td>
-                                <a href="#" class="status inProgress">Edit</a>
-                                <a href="#" class="status completed">Show</a>
-                                <a href="#" class="status pending">Delete</a>                                
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>1.</td>
-                            <td>Park Jay</td>
-                            <td>CV. Smartplus</td>
-                            <td>08-08-2024</td>
-                            <td>09.00</td>
-                            <td>
-                                <a href="#" class="status inProgress">Edit</a>
-                                <a href="#" class="status completed">Show</a>
-                                <a href="#" class="status pending">Delete</a>                                
-                            </td>
-                        </tr>
-                        
-
-                    </tbody>
-                </table>
+                <form class="form" action="#">
+                <div class="main-container-form">
+                    <div class="container-form-right">
+                    <div class="input-group">
+                        <label for="type-training" class="label">Training Type</label>
+                        <select name="type-training" id="type">
+                        <option value="" selected disabled>Choose type of training</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="date" class="label">Date</label>
+                        <input type="date" name="date" id="date" placeholder="Enter date">
+                    </div>
+                    <div class="input-group">
+                        <label for="time" class="label">Time</label>
+                        <input type="time" name="time" id="time" placeholder="Enter time">
+                    </div>
+                    <div class="input-group">
+                        <label for="location" class="label">Location</label>
+                        <select name="location" id="location">
+                        <option value="" selected disabled>Choose location training</option>
+                        <option value="">Inhouse</option>
+                        <option value="">Outhouse</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="progress" class="label">Progress</label>
+                        <select name="progress" id="progress">
+                        <option value="" selected disabled>Choose progress training</option>
+                        <option value="on-progress">On Progress</option>
+                        <option value="done">Done</option>
+                        <option value="pending">Pending</option>
+                        </select>
+                    </div>
+                    </div>
+                </div>
+                <button class="submit-button" type="submit" :disabled="failedInsert">Submit Schedule</button>
+                </form>
             </div>
         <!--End Detail Schedule-->
 
