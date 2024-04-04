@@ -367,15 +367,24 @@ body {
 }
 
 @media (max-width: 768px) {
-  .trainer {
-    grid-template-columns: 1fr;
+  .trainer .trainers table tr td:nth-child(1),
+  .trainer .trainers table tr td:nth-child(2) {
+    display: none; /* Sembunyikan kolom-kolom yang tidak diperlukan */
   }
-  .recentOrders {
-    overflow-x: auto;
+  .trainer .trainers table tr td {
+    text-align: center; 
   }
-  .status.inProgress {
-    white-space: nowrap;
-  }
+   .trainer .trainers table tr td .action-buttons {
+        display: block;
+        margin-bottom: 5px; 
+    }
+}
+
+@media (min-width: 769px) {
+    .trainer .trainers table tr td .action-buttons {
+        display: inline-block; 
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 480px) {

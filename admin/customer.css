@@ -306,17 +306,6 @@ body {
     text-align: start;
 }
 
-.cust .custo table tr td:nth-child(5) {
-    text-align: center;
-}
-
-.cust .custo table tr td:nth-child(1) {
-    text-align: center;
-}
-
-.cust .custo table tr td:nth-child(3) {
-    text-align: center;
-}
 
 .status.completed {
     padding: 2px 4px;
@@ -367,15 +356,27 @@ body {
 }
 
 @media (max-width: 768px) {
-  .cust {
-    grid-template-columns: 1fr;
+  .cust .custo table tr td:nth-child(2),
+  .cust .custo table tr td:nth-child(5) {
+    display: none; /* Sembunyikan kolom-kolom yang tidak diperlukan */
   }
-  .recentOrders {
-    overflow-x: auto;
+  .cust .custo table tr td {
+    text-align: center; 
   }
-  .status.inProgress {
-    white-space: nowrap;
+   .cust .custo table tr td .action-buttons {
+        display: block;
+        margin-bottom: 5px; 
+    }
+}
+
+@media (min-width: 769px) {
+     .cust .custo table tr td {
+    text-align: start; 
   }
+    .cust .custo table tr td .action-buttons {
+        display: inline-block; 
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 480px) {

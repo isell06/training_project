@@ -1,35 +1,14 @@
-// Navigation
+// add hovered class to selected list item
 let list = document.querySelectorAll(".navigation li");
 
-function setActiveLink() {
+function activeLink() {
   list.forEach((item) => {
     item.classList.remove("hovered");
   });
   this.classList.add("hovered");
-
-  // Add logic to show corresponding page based on the selected menu item
-  let pageId = this.dataset.page; // Assuming each navigation item has a "data-page" attribute
-  showPage(pageId);
 }
 
-list.forEach((item) => {
-  item.addEventListener("click", setActiveLink);
-});
-
-// Function to show the corresponding page based on the selected menu item
-function showPage(pageId) {
-  // Hide all pages
-  let pages = document.querySelectorAll(".page");
-  pages.forEach((page) => {
-    page.style.display = "none";
-  });
-
-  // Show the selected page
-  let selectedPage = document.getElementById(pageId);
-  if (selectedPage) {
-    selectedPage.style.display = "block";
-  }
-}
+list.forEach((item) => item.addEventListener("mouseover", activeLink));
 
 // Menu Toggle
 let toggle = document.querySelector(".toggle");

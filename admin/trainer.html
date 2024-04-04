@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
     <link rel="stylesheet" href="trainer.css">
+    <link rel="stylesheet" href="pagination.css">
     <title>Dashboard Admin</title>
 </head>
 <body>
@@ -147,9 +148,15 @@
                             <td>jay@gmail.com</td>
                             <td>L</td>
                             <td>
-                                <a href="#" class="status inProgress">Edit</a>
-                                <a href="#" class="status completed">Show</a>
-                                <a href="#" class="status pending">Delete</a>                                
+                                <div class="action-buttons">
+                                    <a href="#" class="status inProgress">Edit</a>
+                                </div>
+                                <div class="action-buttons">
+                                    <a href="#" class="status completed">Show</a>
+                                </div>
+                                <div class="action-buttons">
+                                    <a href="#" class="status pending">Delete</a>
+                                </div>                                
                             </td>
                         </tr>
 
@@ -162,9 +169,15 @@
                             <td>jay@gmail.com</td>
                             <td>L</td>
                             <td>
-                                <a href="#" class="status inProgress">Edit</a>
-                                <a href="#" class="status completed">Show</a>
-                                <a href="#" class="status pending">Delete</a>                                
+                                <div class="action-buttons">
+                                    <a href="#" class="status inProgress">Edit</a>
+                                </div>
+                                <div class="action-buttons">
+                                    <a href="#" class="status completed">Show</a>
+                                </div>
+                                <div class="action-buttons">
+                                    <a href="#" class="status pending">Delete</a>
+                                </div>                                
                             </td>
                         </tr>
 
@@ -177,9 +190,15 @@
                             <td>jay@gmail.com</td>
                             <td>L</td>
                             <td>
-                                <a href="#" class="status inProgress">Edit</a>
-                                <a href="#" class="status completed">Show</a>
-                                <a href="#" class="status pending">Delete</a>                                
+                                <div class="action-buttons">
+                                    <a href="#" class="status inProgress">Edit</a>
+                                </div>
+                                <div class="action-buttons">
+                                    <a href="#" class="status completed">Show</a>
+                                </div>
+                                <div class="action-buttons">
+                                    <a href="#" class="status pending">Delete</a>
+                                </div>                                
                             </td>
                         </tr>
 
@@ -192,9 +211,15 @@
                             <td>jay@gmail.com</td>
                             <td>L</td>
                             <td>
-                                <a href="#" class="status inProgress">Edit</a>
-                                <a href="#" class="status completed">Show</a>
-                                <a href="#" class="status pending">Delete</a>                                
+                                <div class="action-buttons">
+                                    <a href="#" class="status inProgress">Edit</a>
+                                </div>
+                                <div class="action-buttons">
+                                    <a href="#" class="status completed">Show</a>
+                                </div>
+                                <div class="action-buttons">
+                                    <a href="#" class="status pending">Delete</a>
+                                </div>                                
                             </td>
                         </tr>
 
@@ -207,9 +232,15 @@
                             <td>jay@gmail.com</td>
                             <td>L</td>
                             <td>
-                                <a href="#" class="status inProgress">Edit</a>
-                                <a href="#" class="status completed">Show</a>
-                                <a href="#" class="status pending">Delete</a>                                
+                                <div class="action-buttons">
+                                    <a href="#" class="status inProgress">Edit</a>
+                                </div>
+                                <div class="action-buttons">
+                                    <a href="#" class="status completed">Show</a>
+                                </div>
+                                <div class="action-buttons">
+                                    <a href="#" class="status pending">Delete</a>
+                                </div>                                
                             </td>
                         </tr>
 
@@ -222,9 +253,15 @@
                             <td>jay@gmail.com</td>
                             <td>L</td>
                             <td>
-                                <a href="#" class="status inProgress">Edit</a>
-                                <a href="#" class="status completed">Show</a>
-                                <a href="#" class="status pending">Delete</a>                                
+                                <div class="action-buttons">
+                                    <a href="#" class="status inProgress">Edit</a>
+                                </div>
+                                <div class="action-buttons">
+                                    <a href="#" class="status completed">Show</a>
+                                </div>
+                                <div class="action-buttons">
+                                    <a href="#" class="status pending">Delete</a>
+                                </div>                                
                             </td>
                         </tr>
                         
@@ -233,6 +270,16 @@
                 </table>
             </div>
         <!--End Trainer-->
+
+        <!--Pagination-->
+        <div class="pagination">
+            <button class="prev" onclick="prevPage()">Previous</button>
+            <div class="page-numbers" id="page-numbers">
+            <!-- Page numbers will be inserted here dynamically -->
+            </div>
+            <button class="next" onclick="nextPage()">Next</button>
+        </div>
+        <!--End Pagination-->
 
     </div>
     <!--End Main-->
@@ -244,6 +291,7 @@
 
     <!--Main JS-->
     <script src="js/main.js"></script>
+    <script src="js/pagination.js"></script>
 
     <!--Chart JS-->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>

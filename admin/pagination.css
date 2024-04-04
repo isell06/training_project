@@ -1,0 +1,50 @@
+* {
+   font-family: 'Poppins', sans-serif; 
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   background-color: var(--bg);
+}
+
+
+:root {
+    --white: white;
+    --black: black;
+    --navy1: #06102C;
+    --navy2: #002D80;
+    --navy3: #081331;
+}
+
+
+.pagination {
+  text-align: right;
+  margin-top: 2px;
+}
+
+.page-numbers button, .pagination button {
+  padding: 5px 10px;
+  background-color: var(--white);
+  color: var(--navy1);
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+}
+
+.page-numbers button:hover, .pagination button:hover {
+  background-color: var(--navy1);
+  color: var(--white);
+}
+
+.page-numbers {
+  display: inline-block;
+}
+
+.page-numbers button {
+  margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+    .pagination {
+        text-align: center;
+    }
+}

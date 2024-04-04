@@ -306,15 +306,6 @@ body {
     text-align: start;
 }
 
-.course .courses table tr td:nth-child(2) {
-    text-align:  start;
-}
-
-
-.course .courses table tr td:nth-child(3) {
-    text-align: start;
-}
-
 
 .status.completed {
     padding: 2px 4px;
@@ -365,15 +356,28 @@ body {
 }
 
 @media (max-width: 768px) {
-  .course {
-    grid-template-columns: 1fr;
+  .course .courses table tr td:nth-child(4),
+  .course .courses table tr td:nth-child(6) {
+    display: none; /* Sembunyikan kolom-kolom yang tidak diperlukan */
   }
-  .recentOrders {
-    overflow-x: auto;
+    .course .courses table tr td {
+    text-align: center; 
   }
-  .status.inProgress {
-    white-space: nowrap;
+
+  .course .courses table tr td .action-buttons {
+        display: block;
+        margin-bottom: 5px; 
+    }
+}
+
+@media (min-width: 769px) {
+     .course .courses table tr td {
+    text-align: start; 
   }
+    .course .courses table tr td .action-buttons {
+        display: inline-block; 
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 480px) {
